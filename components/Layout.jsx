@@ -28,6 +28,7 @@ export default function Layout({ children, home }) {
           <Navbar />
       <main>{children}</main>
 
+          <Footer />
           <style jsx>{`
         .main {
           margin: 0 auto;
