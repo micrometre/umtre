@@ -5,29 +5,30 @@ import Image from "next/image";
 const pageStyles = {
   color: "#232129",
   padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
   top: "0px",
   position: "fixed",
   overflow: "hidden",
   width: "100%",
-  background: "yellow",
+  background: "#563d7c",
+  display: "flex",
 };
 const listStyles = {
-  marginBottom: 96,
+  marginBottom: 1,
   paddingLeft: 0,
+  overflow: "hidden",
+  display: "block",
 };
 const listItemStyles = {
   fontWeight: 300,
   fontSize: 24,
   maxWidth: 560,
-  marginBottom: 30,
+  margin: 30,
 };
 
 const linkStyle = {
-  color: "#8954A8",
+  color: "#ffffff",
   fontWeight: "bold",
   fontSize: 16,
-  verticalAlign: "5%",
 };
 
 // data
@@ -55,14 +56,49 @@ const links = [
 // markup
 const IndexPage = () => {
   return (
-      <main style={pageStyles}>
-        <ul style={listStyles}>
+    <div
+      style={{
+        border: "0.2rem solid teal",
+        padding: 0,
+        top: "0px",
+        position: "fixed",
+        overflow: "hidden",
+        width: "100%",
+        background: "#563d7c",
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "center",
+      }}
+    >
+      <main
+        style={{
+          padding: 0,
+        display: "flex",
+        }}
+      >
+        <ul
+          style={{
+        display: "flex",
+            padding: 0,
+            border: "0.1rem solid teal",
+          }}
+        >
           {links.map((link) => (
-            <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
+            <li
+              key={link.url}
+              style={{
+                padding: 0,
+                backgroundColor: "#ffffff",
+                border: "0.2rem solid teal",
+              }}
+            >
               <span>
                 <a
-                  style={linkStyle}
-                  href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
+                  style={{
+                    padding: 0,
+                    border: "0.2rem solid teal",
+                  }}
+                  href={`${link.url}`}
                 >
                   {link.text}
                 </a>
@@ -71,6 +107,7 @@ const IndexPage = () => {
           ))}
         </ul>
       </main>
+    </div>
   );
 };
 
