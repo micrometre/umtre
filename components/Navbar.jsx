@@ -1,56 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
-
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  top: "0px",
-  position: "fixed",
-  overflow: "hidden",
-  width: "100%",
-  background: "#563d7c",
-  display: "flex",
-};
-const listStyles = {
-  marginBottom: 1,
-  paddingLeft: 0,
-  overflow: "hidden",
-  display: "block",
-};
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  margin: 30,
-};
-
-const linkStyle = {
-  color: "#ffffff",
-  fontWeight: "bold",
-  fontSize: 16,
-};
-
+import { FaTwitter,  FaEnvelope } from 'react-icons/fa';
 // data
 const links = [
   {
-    text: "MicrometreUK",
-    url: "/",
-    description: "Brand Logo.",
-    color: "#563d7c",
-  },
-  {
-    text: "MicrometreUK Github repositories",
-    url: "https://github.com/micrometreuk",
-    description: "projects/repos hosted on github",
-    color: "#1099A8",
-  },
-  {
-    text: "Find us on Facebook",
-    url: "https://www.facebook.com/micro.metre.9",
-    description: "projects comminity group",
-    color: "#BC027F",
-  },
+    title: "Follow us on twitter",
+    text: "Follow us on twitter",
+    url: "https://twitter.com/elmbridgepaint1",
+    subtitle: "Twitter Icon",
+    icons: FaTwitter
+  }
 ];
 
 // markup
@@ -64,10 +23,10 @@ const IndexPage = () => {
         position: "fixed",
         overflow: "hidden",
         width: "100%",
-        background: "#563d7c",
+        background: "white",
         display: "flex",
         flexDirection: "row",
-        justifyContent: "center",
+        justifyContent: "space-around",
       }}
     >
       <main
@@ -77,31 +36,19 @@ const IndexPage = () => {
         }}
       >
         <ul
-          style={{
-        display: "flex",
-            padding: 0,
-            border: "0.1rem solid teal",
-          }}
         >
           {links.map((link) => (
             <li
               key={link.url}
-              style={{
-                padding: 0,
-                backgroundColor: "#ffffff",
-                border: "0.2rem solid teal",
-              }}
             >
               <span>
                 <a
-                  style={{
-                    padding: 0,
-                    border: "0.2rem solid teal",
-                  }}
                   href={`${link.url}`}
                 >
                   {link.text}
                 </a>
+                <link.icons  />
+
               </span>
             </li>
           ))}
