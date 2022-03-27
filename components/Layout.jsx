@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import SocialNavbar from "./SocialNavbar";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 const name = "MicrometreUK";
@@ -25,6 +26,7 @@ export default function Layout({ children, home }) {
         />
         <title>{siteTitle}</title>
       </Head>
+      <SocialNavbar />
       <Navbar />
       <main>{children}</main>
 
