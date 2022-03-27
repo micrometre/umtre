@@ -5,7 +5,7 @@ import {
   FaTwitter,
   FaInstagram,
   FaEnvelope,
-  FaHome
+  FaHome,
 } from "react-icons/fa";
 export const socialdata = [
   {
@@ -13,7 +13,7 @@ export const socialdata = [
       {
         title: "Follow us on Facebook",
         subtitle: "Facebook Icon",
-        href: "https://www.facebook.com/profile.php?id=100070020624202",
+        href: "https://www.facebook.com/micro.metre.9",
         icons: FaFacebook,
       },
       {
@@ -40,13 +40,48 @@ export const pathData = [
         title: "home page",
         subtitle: "homepage ",
         href: "/",
-        icons: FaHome,
+        icons: FaTwitter,
       },
       {
         name: "Interior",
         title: "Interior page",
         subtitle: "homepage ",
         href: "/interior",
+        icons: FaTwitter,
+      },
+      {
+        name: "Exterior",
+        title: "Exterior page",
+        subtitle: "homepage ",
+        href: "/exterior",
+        icons: FaTwitter,
+      },
+      {
+        name: "River Access",
+        title: "River Access page",
+        subtitle: "homepage ",
+        href: "/river",
+        icons: FaTwitter,
+      },
+      {
+        name: "Painting Decoaration",
+        title: "Painting page",
+        subtitle: "homepage ",
+        href: "/painting",
+        icons: FaTwitter,
+      },
+      {
+        name: "Commercial",
+        title: "Commercial page",
+        subtitle: "homepage ",
+        href: "/commercial",
+        icons: FaTwitter,
+      },
+      {
+        name: "Contact",
+        title: "Contact page",
+        subtitle: "homepage ",
+        href: "/contact",
         icons: FaTwitter,
       },
     ],

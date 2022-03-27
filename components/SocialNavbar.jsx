@@ -4,9 +4,9 @@ import { socialdata } from "../data/data";
 
 function NavBarPhones() {
   const socialIconStyles = {
-    fontSize: "2.7em",
-    color: "white",
-    borderRadius: "4rem",
+    fontSize: "2.0em",
+    color: "#ffffff",
+    borderRadius: "1rem",
     top: "10px",
     right: "20px",
   };
@@ -39,14 +39,15 @@ function NavBarPhones() {
           width: 100%;
           display: flex;
           justify-content: space-around;
-          background-color: #6c757d;
+          background-color: teal;
           position: fixed;
           top: 0;
           right: 0;
           left: 0;
           z-index: 1030;
           padding: 0rem;
-          margin-bottom: 1rem;
+          padding-top: 0.1rem;
+          margin-bottom: 0rem;
         }
         socialdiv::-webkit-justify-content {
           background: #1e1e24;
