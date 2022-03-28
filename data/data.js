@@ -7,13 +7,15 @@ import {
   FaEnvelope,
   FaHome,
 } from "react-icons/fa";
+const logo = `/logo/umlogo.gif`;
+
 export const socialdata = [
   {
     socialLinks: [
       {
-        title: "Follow us on Facebook",
-        subtitle: "Facebook Icon",
-        href: "https://www.facebook.com/micro.metre.9",
+        title: "Home page",
+        subtitle: "page titele",
+        href: "/",
         icons: FaFacebook,
       },
       {
