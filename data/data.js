@@ -7,7 +7,7 @@ import {
   FaEnvelope,
   FaHome,
 } from "react-icons/fa";
-const logo = `/logo/umlogo.gif`;
+import {Logo} from "../components/Logo"
 
 export const socialdata = [
   {
@@ -17,12 +17,6 @@ export const socialdata = [
         subtitle: "page titele",
         href: "/",
         icons: FaFacebook,
-      },
-      {
-        title: "Follow us on Instagram",
-        subtitle: "Instagram Icons",
-        href: "/",
-        icons: FaInstagram,
       },
       {
         title: "Follow us on twitter",
@@ -42,34 +36,6 @@ export const pathData = [
         title: "home page",
         subtitle: "homepage ",
         href: "/",
-        icons: FaTwitter,
-      },
-      {
-        name: "Interior",
-        title: "Interior page",
-        subtitle: "homepage ",
-        href: "/interior",
-        icons: FaTwitter,
-      },
-      {
-        name: "Exterior",
-        title: "Exterior page",
-        subtitle: "homepage ",
-        href: "/exterior",
-        icons: FaTwitter,
-      },
-      {
-        name: "River Access",
-        title: "River Access page",
-        subtitle: "homepage ",
-        href: "/river",
-        icons: FaTwitter,
-      },
-      {
-        name: "Painting Decoaration",
-        title: "Painting page",
-        subtitle: "homepage ",
-        href: "/painting",
         icons: FaTwitter,
       },
       {
