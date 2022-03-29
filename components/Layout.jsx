@@ -26,11 +26,8 @@ export default function Layout({ children, home }) {
         />
         <title>{siteTitle}</title>
       </Head>
-      <SocialNavbar />
       <Navbar />
       <main>{children}</main>
-
-      <Footer />
       <style jsx>{`
         .main {
           margin: 0;
